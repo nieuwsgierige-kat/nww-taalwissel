@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>NWW taalwissel</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; color: #222; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; word-break: break-all; }
+  .muted { color: #666; font-size: .9rem; }
+</style>
+</head>
+<body>
+<p id="msg">Bezig…</p>
+<p class="muted" id="meta"></p>
+<script>
+(async () => {
+  const msg = document.getElementById('msg');
+  const meta = document.getElementById('meta');
+  const u = new URLSearchParams(location.search).get('u');
+  const lang = new URLSearchParams(location.search).get('lang') || 'en';
+
+  // Zelfde normalisatie als norm() in build_map.py
+  const norm = (s) => {
+    const p = new URL(s);
+    return p.hostname.toLowerCase().replace(/^www\./, '') + (p.pathname.replace(/\/+$/, '') || '/');
+  };
+
+  if (!u) {
+    msg.innerHTML = 'Gebruik de bookmarklet op een pagina van nederlandwereldwijd.nl.';
+    const dl = document.createElement('p');
+    dl.append(Object.assign(document.createElement('a'), { href: 'koppellijst.xlsx', textContent: 'Download de koppellijst (.xlsx)' }));
+    document.body.append(dl);
+    return;
+  }
+  let key;
+  try { key = norm(u); } catch { msg.textContent = 'Ongeldige URL.'; return; }
+
+  let map;
+  try {
+    const r = await fetch('map.json', { cache: 'no-cache' });
+    map = await r.json();
+    const lm = r.headers.get('last-modified');
+    if (lm) meta.textContent = 'Koppellijst bijgewerkt: ' + new Date(lm).toLocaleString('nl-NL');
+  } catch {
+    msg.textContent = 'Koppellijst kon niet geladen worden.';
+    return;
+  }
+
+  const hit = map[key];
+  if (hit && hit[lang]) {
+    location.replace(hit[lang]);
+    return;
+  }
+  msg.innerHTML = '';
+  msg.append('Geen ' + lang.toUpperCase() + '-versie gevonden voor ', Object.assign(document.createElement('code'), { textContent: u }), '.');
+  if (hit) {
+    const other = Object.keys(hit).join(', ');
+    msg.append(' Wel beschikbaar: ' + other + '.');
+  }
+  const back = Object.assign(document.createElement('p'), {});
+  back.append(Object.assign(document.createElement('a'), { href: u, textContent: '← Terug naar de pagina' }));
+  document.body.append(back);
+})();
+</script>
+</body>
+</html>
