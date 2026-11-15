@@ -48,6 +48,7 @@ Na elke geslaagde run staat de nieuwste versie op
 - **Gekoppeld**: NL-pagina met EN/ES/FR/DE, de NL sub-sitemap en hoe de koppeling gevonden is (*CMS*, *afgeleid* of *handmatig*).
 - **Geen EN-versie**: Nederlandse pagina's uit de sitemap waar geen Engelse pagina naar linkt (ook niet afgeleid).
 - **EN zonder NL-link**: Engelse pagina's waar het CMS geen NL-link geeft, met de vermoedelijke NL-pagina. Werklijst om de koppeling in het CMS te herstellen.
+- **Doorverwijzingen in sitemap**: Engelse URL's die in de sitemap staan maar doorsturen naar een andere pagina. Die worden niet gekoppeld (anders lijkt het alsof twee Engelse pagina's naar dezelfde NL-pagina linken). Opruimlijst voor de sitemap. Wordt alleen bijgewerkt voor pagina's die opgehaald worden: draai daarom maandelijks een volledige run.
 - **Meerdere EN naar 1 NL**: Nederlandse pagina's waar meer dan één Engelse pagina naar linkt (vaak dubbele of verkeerde koppeling in het CMS).
 - **Te controleren**: Engelse pagina's die linken naar een NL-URL die niet in de NL-sitemap staat, met status:
   - *verplaatst*: de oude URL stuurt door; de nieuwe URL staat erbij en werkt ook in de bookmarklet.

@@ -227,6 +227,8 @@ def link(state: dict, nl_by_norm: dict, manual: dict) -> dict:
     """
     cms, missing = [], []
     for en_url in sorted(state):
+        if state[en_url].get("redirect"):
+            continue                    # doorverwijzing: geen eigen pagina
         tr = state[en_url]["translations"]
         langs = {t["lang"]: t["link"] for t in tr if t.get("lang") and t.get("link")}
         nl = langs.pop("nl", None)
@@ -273,7 +275,7 @@ def load(path, default):
         return default
 
 
-def write_xlsx(pairs, gaps, en_missing, multi, checks, info):
+def write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, info):
     from openpyxl import Workbook
     from openpyxl.styles import Font, PatternFill
     from openpyxl.utils import get_column_letter
@@ -310,6 +312,8 @@ def write_xlsx(pairs, gaps, en_missing, multi, checks, info):
           en_missing, [70, 34, 26, 70, 22])
     sheet(wb.create_sheet(), "Meerdere EN naar 1 NL",
           ["NL-pagina", "Aantal EN-pagina's", "EN-pagina's"], multi, [60, 12, 120])
+    sheet(wb.create_sheet(), "Doorverwijzingen in sitemap",
+          ["EN-URL in sitemap", "EN sub-sitemap", "Stuurt door naar"], redirect_rows, [80, 34, 80])
     sheet(wb.create_sheet(), "Te controleren",
           ["EN-pagina", "NL-link op EN-pagina", "Status", "Nieuwe NL-URL"], checks, [60, 60, 16, 60])
     sheet(wb.create_sheet(), "Info", ["Onderdeel", "Waarde"], info, [40, 60])
@@ -344,13 +348,19 @@ def main():
     # Pagina's die vorige keer ook al geen vertaaldata hadden (o.a. de ambassadepagina's, die
     # zonder lastmod elke run opnieuw opgehaald worden) tellen niet mee voor de structuurcheck.
     known_empty = {u for u in todo if u in state and not state[u].get("translations")}
-    fails = no_data = no_data_new = 0
+    fails = no_data = no_data_new = redirects = n_check = 0
     for i, u in enumerate(todo, 1):
         try:
             r = get(u)
             if r.status_code != 200:
                 raise RuntimeError(r.status_code)
+            if r.history and norm(r.url) != norm(u):
+                # URL in de sitemap stuurt door: de data hoort bij de doelpagina, niet bij deze URL.
+                state[u] = {"lastmod": en_urls[u]["lastmod"], "translations": [], "redirect": r.url}
+                redirects += 1
+                continue
             tr = parse_translations(r.text)
+            n_check += u not in known_empty
             if tr is None:
                 no_data += 1
                 no_data_new += u not in known_empty
@@ -358,13 +368,14 @@ def main():
         except Exception as e:  # noqa: BLE001
             fails += 1
             print(f"  FOUT {u}: {e}")
-        if i % 100 == 0:
-            print(f"  {i}/{len(todo)} (fouten: {fails}, zonder vertaaldata: {no_data})")
-        time.sleep(DELAY)
+        finally:
+            if i % 100 == 0:
+                print(f"  {i}/{len(todo)} (fouten: {fails}, zonder vertaaldata: {no_data}, "
+                      f"doorverwijzingen: {redirects})")
+            time.sleep(DELAY)
 
     if todo and fails / len(todo) > MAX_FAIL_RATIO:
         sys.exit(f"{fails}/{len(todo)} fetches mislukt - mogelijk geblokkeerd. Niets opgeslagen.")
-    n_check = len(todo) - len(known_empty)
     if n_check >= 20 and no_data_new / n_check > 0.9:
         sys.exit(f"Bij {no_data_new}/{n_check} pagina's geen vertaaldata gevonden - "
                  "paginastructuur veranderd? Niets opgeslagen.")
@@ -406,6 +417,8 @@ def main():
             for k, (u, v) in sorted(nl_by_norm.items()) if k not in new_map]
     en_missing = [[en, en_urls[en]["source"], reason, nl or "geen NL-pagina gevonden", how]
                   for en, reason, nl, how, _ in result["proposals"]]
+    redirect_rows = [[u, en_urls[u]["source"], v["redirect"]]
+                     for u, v in sorted(state.items()) if v.get("redirect")]
     multi = [[nl_by_norm.get(k, (k, {}))[0], len(v), "\n".join(sorted(v))]
              for k, v in sorted(by_nl.items()) if len(v) > 1]
     hows = {}
@@ -424,6 +437,7 @@ def main():
         ["Geen EN-versie", len(gaps)],
         ["EN zonder NL-link in CMS", len(en_missing)],
         ["NL-pagina's met meerdere EN-pagina's", len(multi)],
+        ["EN-sitemap-URL's die doorverwijzen", len(redirect_rows)],
         ["Te controleren", len(checks)],
         ["Opgehaald deze run", len(todo)],
         ["Mislukt deze run", fails],
@@ -438,13 +452,13 @@ def main():
         json.dump(state, f, ensure_ascii=False, indent=0, sort_keys=True)
     with open(OUT_MAP, "w", encoding="utf-8") as f:
         json.dump(new_map, f, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
-    write_xlsx(pairs, gaps, en_missing, multi, checks, info)
+    write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, info)
 
     counts = {}
     for c in checks:
         counts[c[2]] = counts.get(c[2], 0) + 1
     print(f"Klaar: {len(pairs)} gekoppeld {hows}, {len(gaps)} zonder EN-versie, "
-          f"{len(en_missing)} EN zonder NL-link, {len(checks)} te controleren {counts} "
+          f"{len(en_missing)} EN zonder NL-link, {len(redirect_rows)} doorverwijzingen, {len(checks)} te controleren {counts} "
           f"(fouten: {fails}, zonder vertaaldata: {no_data})")
 
 
