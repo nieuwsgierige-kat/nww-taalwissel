@@ -341,7 +341,10 @@ def main():
             if FULL or u not in state or state[u].get("lastmod") != v["lastmod"] or not v["lastmod"]]
     print(f"Op te halen: {len(todo)}")
 
-    fails = no_data = 0
+    # Pagina's die vorige keer ook al geen vertaaldata hadden (o.a. de ambassadepagina's, die
+    # zonder lastmod elke run opnieuw opgehaald worden) tellen niet mee voor de structuurcheck.
+    known_empty = {u for u in todo if u in state and not state[u].get("translations")}
+    fails = no_data = no_data_new = 0
     for i, u in enumerate(todo, 1):
         try:
             r = get(u)
@@ -350,6 +353,7 @@ def main():
             tr = parse_translations(r.text)
             if tr is None:
                 no_data += 1
+                no_data_new += u not in known_empty
             state[u] = {"lastmod": en_urls[u]["lastmod"], "translations": tr or []}
         except Exception as e:  # noqa: BLE001
             fails += 1
@@ -360,8 +364,9 @@ def main():
 
     if todo and fails / len(todo) > MAX_FAIL_RATIO:
         sys.exit(f"{fails}/{len(todo)} fetches mislukt - mogelijk geblokkeerd. Niets opgeslagen.")
-    if len(todo) >= 20 and no_data / len(todo) > 0.9:
-        sys.exit(f"Bij {no_data}/{len(todo)} pagina's geen vertaaldata gevonden - "
+    n_check = len(todo) - len(known_empty)
+    if n_check >= 20 and no_data_new / n_check > 0.9:
+        sys.exit(f"Bij {no_data_new}/{n_check} pagina's geen vertaaldata gevonden - "
                  "paginastructuur veranderd? Niets opgeslagen.")
 
     state = {u: v for u, v in state.items() if u in en_urls}
