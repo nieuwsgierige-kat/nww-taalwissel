@@ -49,6 +49,9 @@ OUT_MAP = "docs/map.json"
 OUT_XLSX = "docs/koppellijst.xlsx"
 STATE = "data/state.json"
 MANUAL = "data/handmatig.json"
+CONTROL = "data/controle.json"
+OUT_VERSION = "docs/versie.json"
+VERSION = (os.getenv("GITHUB_SHA") or "lokaal")[:7]   # commit van het script dat deze run maakte
 DELAY = float(os.getenv("DELAY", "1.0"))   # seconden tussen requests
 FULL = os.getenv("FULL") == "1"
 MIN_RATIO = 0.8                     # nieuwe kaart < 80% van de oude -> niet opslaan
@@ -117,7 +120,7 @@ def sitemap_urls(url: str, out: dict, seen: set, counts: dict) -> None:
         counts[label] = counts.get(label, 0) + n
 
 
-def read_sitemaps(urls: list[str]) -> tuple[dict, dict]:
+def read_sitemaps(urls: list[str], problems: list) -> tuple[dict, dict]:
     """Leest de sub-sitemaps en als laatste de hoofdsitemap. Een ontbrekende sub-sitemap
     geeft een waarschuwing (de hoofdsitemap vangt dat op); een fout in de hoofdsitemap breekt af."""
     out, seen, counts = {}, set(), {}
@@ -128,6 +131,7 @@ def read_sitemaps(urls: list[str]) -> tuple[dict, dict]:
             if i == len(urls) - 1:
                 raise
             print(f"  WAARSCHUWING: sitemap {url} niet leesbaar ({e}); hoofdsitemap vangt dit op")
+            problems.append([url, "sitemap", f"niet leesbaar: {e}"])
     return out, counts
 
 
@@ -275,7 +279,7 @@ def load(path, default):
         return default
 
 
-def write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, info):
+def write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, not_fetched, info):
     from openpyxl import Workbook
     from openpyxl.styles import Font, PatternFill
     from openpyxl.utils import get_column_letter
@@ -316,7 +320,9 @@ def write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, info):
           ["EN-URL in sitemap", "EN sub-sitemap", "Stuurt door naar"], redirect_rows, [80, 34, 80])
     sheet(wb.create_sheet(), "Te controleren",
           ["EN-pagina", "NL-link op EN-pagina", "Status", "Nieuwe NL-URL"], checks, [60, 60, 16, 60])
-    sheet(wb.create_sheet(), "Info", ["Onderdeel", "Waarde"], info, [40, 60])
+    sheet(wb.create_sheet(), "Niet opgehaald",
+          ["URL", "Soort", "Reden"], not_fetched, [80, 14, 60])
+    sheet(wb.create_sheet(), "Info", ["Onderdeel", "Waarde"], info, [40, 90])
     wb.save(OUT_XLSX)
 
 
@@ -326,14 +332,15 @@ def main():
     manual = load(MANUAL, {})
 
     # 1. Engelse kant
-    en_all, en_counts = read_sitemaps(EN_SITEMAPS)
+    not_fetched = []                    # [url, soort, reden] -> tabblad Niet opgehaald
+    en_all, en_counts = read_sitemaps(EN_SITEMAPS, not_fetched)
     en_urls = {u: v for u, v in en_all.items() if not LANG_SUFFIX.search(urlsplit(u).path)}
     print(f"EN-sitemaps: {len(en_all)} URL's, waarvan {len(en_urls)} Engels; per sitemap {en_counts}")
     if not en_urls:
         sys.exit("Geen Engelse URL's in de sitemap gevonden - afgebroken.")
 
     # 2. Nederlandse kant (alleen sitemap)
-    nl_all, nl_counts = read_sitemaps(NL_SITEMAPS)
+    nl_all, nl_counts = read_sitemaps(NL_SITEMAPS, not_fetched)
     nl_by_norm = {norm(u): (u, v) for u, v in nl_all.items()}
     print(f"NL-sitemaps: {len(nl_all)} URL's; per sitemap {nl_counts}")
     if not nl_all:
@@ -368,6 +375,8 @@ def main():
         except Exception as e:  # noqa: BLE001
             fails += 1
             print(f"  FOUT {u}: {e}")
+            not_fetched.append([u, "EN-pagina", f"{e} (vorige gegevens gebruikt)" if u in state
+                                else f"{e} (niet gekoppeld)"])
         finally:
             if i % 100 == 0:
                 print(f"  {i}/{len(todo)} (fouten: {fails}, zonder vertaaldata: {no_data}, "
@@ -425,9 +434,24 @@ def main():
     for p in pairs:
         hows[p[6]] = hows.get(p[6], 0) + 1
 
+    control = load(CONTROL, {}).get("paginas", {})
+    deviations = []
+    for nl_url, expected in control.items():
+        got = new_map.get(norm(nl_url), {})
+        for lang, url in expected.items():
+            actual = got.get(lang)
+            if not actual or norm(actual) != norm(url):
+                deviations.append(f"{nl_url} [{lang}]: verwacht {url}, nu {actual or 'geen'}")
+    for d in deviations:
+        print(f"  CONTROLE AFWIJKING: {d}")
+
     now = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M %Z")
     info = [
         ["Bijgewerkt", now],
+        ["Scriptversie", VERSION],
+        ["Controlepagina's", f"{len(control) - len({d.split(' [')[0] for d in deviations})}/{len(control)} OK"],
+        *[["  AFWIJKING", d] for d in deviations],
+        ["Niet opgehaald (zie tabblad)", len(not_fetched)],
         ["Engelse pagina's in sitemaps (alleen EN, zonder ES/FR/DE)", len(en_urls)],
         *[[f"  EN sub-sitemap: {k}", v] for k, v in sorted(en_counts.items())],
         ["Nederlandse pagina's in sitemaps", len(nl_all)],
@@ -452,14 +476,17 @@ def main():
         json.dump(state, f, ensure_ascii=False, indent=0, sort_keys=True)
     with open(OUT_MAP, "w", encoding="utf-8") as f:
         json.dump(new_map, f, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
-    write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, info)
+    write_xlsx(pairs, gaps, en_missing, multi, redirect_rows, checks, not_fetched, info)
+    with open(OUT_VERSION, "w", encoding="utf-8") as f:
+        json.dump({"versie": VERSION, "bijgewerkt": now}, f, ensure_ascii=False)
 
     counts = {}
     for c in checks:
         counts[c[2]] = counts.get(c[2], 0) + 1
     print(f"Klaar: {len(pairs)} gekoppeld {hows}, {len(gaps)} zonder EN-versie, "
           f"{len(en_missing)} EN zonder NL-link, {len(redirect_rows)} doorverwijzingen, {len(checks)} te controleren {counts} "
-          f"(fouten: {fails}, zonder vertaaldata: {no_data})")
+          f"(fouten: {fails}, zonder vertaaldata: {no_data}, controle-afwijkingen: {len(deviations)}, "
+          f"versie {VERSION})")
 
 
 if __name__ == "__main__":
