@@ -13790,6 +13790,7 @@
 },
 "https://www.netherlandsworldwide.nl/contact/embassies-consulates-general/micronesia": {
 "lastmod": "",
+"redirect": "https://www.netherlandsworldwide.nl/contact/embassies-consulates-general/philippines/embassy-manila",
 "translations": []
 },
 "https://www.netherlandsworldwide.nl/contact/embassies-consulates-general/moldova": {
@@ -14361,16 +14362,8 @@
 },
 "https://www.netherlandsworldwide.nl/death-abroad/information-about-death": {
 "lastmod": "2022-05-09T11:22:07.562Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/missing-abroad"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/vermissing-buitenland"
-}
-]
+"redirect": "https://www.netherlandsworldwide.nl/missing-abroad",
+"translations": []
 },
 "https://www.netherlandsworldwide.nl/death-abroad/repatriation": {
 "lastmod": "2025-05-07T08:09:50.308Z",
@@ -44855,33 +44848,13 @@
 },
 "https://www.netherlandsworldwide.nl/passport-id-card/where-can-i-apply-for-or-renew-a-dutch-passport-or-id-card-in-canada": {
 "lastmod": "2025-02-21T14:48:12.930Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/abroad/apply-canada"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/paspoort-id-kaart/buitenland/paspoort-canada"
-}
-]
+"redirect": "https://www.netherlandsworldwide.nl/passport-id-card/abroad/apply-canada",
+"translations": []
 },
 "https://www.netherlandsworldwide.nl/passport-id-card/where-can-i-apply-spain": {
 "lastmod": "2025-02-21T14:45:27.179Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/abroad/apply-spain"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/abroad/apply-spain.es"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/paspoort-id-kaart/buitenland/paspoort-spanje"
-}
-]
+"redirect": "https://www.netherlandsworldwide.nl/passport-id-card/abroad/apply-spain",
+"translations": []
 },
 "https://www.netherlandsworldwide.nl/passport-id-card/where-to-apply": {
 "lastmod": "2026-10-16T15:04:22.798Z",
