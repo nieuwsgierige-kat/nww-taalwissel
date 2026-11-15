@@ -43,6 +43,9 @@
     map = await r.json();
     const lm = r.headers.get('last-modified');
     if (lm) meta.textContent = 'Koppellijst bijgewerkt: ' + new Date(lm).toLocaleString('nl-NL');
+    fetch('versie.json', { cache: 'no-cache' }).then(v => v.ok ? v.json() : null).then(v => {
+      if (v) meta.textContent = 'Koppellijst bijgewerkt: ' + v.bijgewerkt + ' · scriptversie ' + v.versie;
+    }).catch(() => {});
   } catch {
     msg.textContent = 'Koppellijst kon niet geladen worden.';
     return;

@@ -21,23 +21,29 @@ Veiligheidsgrenzen: de lijst wordt **niet** overschreven als meer dan 20% van de
 
 ## Bookmarklet
 
-Maak een bladwijzer met als URL:
+Maak een bladwijzer en plak één van deze regels als URL (precies zo, op één regel). De code bevat bewust geen `%`, `#` of regeleinden: Firefox kan die bij opslaan of bewerken omzetten, waarna de bladwijzer zonder foutmelding niet meer werkt.
+
+Engels, zelfde tabblad:
 
 ```
 javascript:(()=>{location.href='https://nieuwsgierige-kat.github.io/nww-taalwissel/?u='+encodeURIComponent(location.href)})()
 ```
 
-Liever in een nieuw tabblad: vervang `location.href=` door `window.open(` en sluit af met `)` vóór `})()`:
+Engels, nieuw tabblad:
 
 ```
 javascript:(()=>{window.open('https://nieuwsgierige-kat.github.io/nww-taalwissel/?u='+encodeURIComponent(location.href))})()
 ```
 
-Andere taal (bijv. Spaans; ook `fr` of `de`):
+Spaans, Frans of Duits (zelfde tabblad; vervang `es` door `fr` of `de`):
 
 ```
 javascript:(()=>{location.href='https://nieuwsgierige-kat.github.io/nww-taalwissel/?u='+encodeURIComponent(location.href)+'&lang=es'})()
 ```
+
+Controle na opslaan: ga naar https://www.nederlandwereldwijd.nl/bsn en klik op de bladwijzer. Je moet uitkomen op https://www.netherlandsworldwide.nl/bsn (of de Spaanse/Franse/Duitse versie). Gebeurt er niets, verwijder de bladwijzer en plak de regel opnieuw.
+
+De bladwijzer zelf verandert nooit: alle logica zit in de lookup-pagina en de koppellijst. Een nieuwe versie van het script vraagt dus niet om een nieuwe bladwijzer. Welke versie actief is, staat onderaan de lookup-pagina en op het tabblad Info.
 
 ## Koppellijst als spreadsheet
 
@@ -55,7 +61,10 @@ Na elke geslaagde run staat de nieuwste versie op
   - *niet gevonden*: de Engelse pagina linkt naar een verwijderde Nederlandse pagina (fout in het CMS).
   - *niet in sitemap*: de pagina bestaat, maar ontbreekt in de sitemap.
   - *onduidelijk*: niet automatisch vast te stellen; handmatig bekijken.
-- **Info**: datum van de run en aantallen.
+- **Niet opgehaald**: sitemaps of Engelse pagina's die deze run niet opgehaald konden worden, met de reden. Leeg = alles gelukt.
+- **Info**: datum van de run, scriptversie, aantallen en de uitslag van de controlepagina's.
+
+**Controlepagina's** (`data/controle.json`): een vaste set koppelingen die elke run gecontroleerd wordt. Een afwijking staat in het log (`CONTROLE AFWIJKING`) en op het tabblad Info. Oorzaak is meestal een wijziging op de site of in het script; is die bewust, pas dan de verwachting in het bestand aan.
 
 Het log van elke run begint met een zelftest: hoe de site een niet-bestaande pagina afhandelt. Als daar niet `-> niet gevonden` staat, klopt de detectie van verwijderde pagina's niet en moet het script aangepast worden.
 

@@ -1,0 +1,14 @@
+{
+  "_uitleg": "Vaste controlepagina's (regressietest). Elke run vergelijkt de koppeling met wat hier staat en meldt afwijkingen in het log en op het tabblad Info. Bij een bewuste wijziging op de site: pas de verwachting hier aan.",
+  "paginas": {
+    "https://www.nederlandwereldwijd.nl/": {"en": "https://www.netherlandsworldwide.nl/"},
+    "https://www.nederlandwereldwijd.nl/consulaire-tarieven/duitsland": {"en": "https://www.netherlandsworldwide.nl/consular-fees/germany", "de": "https://www.netherlandsworldwide.nl/consular-fees/germany.de"},
+    "https://www.nederlandwereldwijd.nl/bsn": {"en": "https://www.netherlandsworldwide.nl/bsn", "es": "https://www.netherlandsworldwide.nl/bsn/es", "fr": "https://www.netherlandsworldwide.nl/bsn/fr"},
+    "https://www.nederlandwereldwijd.nl/contact/ambassades-consulaten-generaal/albanie": {"en": "https://www.netherlandsworldwide.nl/contact/embassies-consulates-general/albania"},
+    "https://www.nederlandwereldwijd.nl/contact/ambassades-consulaten-generaal/bahama-s": {"en": "https://www.netherlandsworldwide.nl/contact/embassies-consulates-general/bahamas"},
+    "https://www.nederlandwereldwijd.nl/consulaire-tarieven/italie": {"en": "https://www.netherlandsworldwide.nl/consular-fees/italy"},
+    "https://www.nederlandwereldwijd.nl/zoeken": {"en": "https://www.netherlandsworldwide.nl/search"},
+    "https://www.nederlandwereldwijd.nl/paspoort-id-kaart/buitenland/paspoort-canada": {"en": "https://www.netherlandsworldwide.nl/passport-id-card/abroad/apply-canada"},
+    "https://www.nederlandwereldwijd.nl/vermissing-buitenland": {"en": "https://www.netherlandsworldwide.nl/missing-abroad"}
+  }
+}
