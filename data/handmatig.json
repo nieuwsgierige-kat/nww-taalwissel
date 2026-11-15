@@ -1,0 +1,36 @@
+{
+  "_uitleg": "Handmatige koppelingen voor Engelse pagina's zonder NL-link in het CMS. Paden zonder domein. 'mappen': EN-map -> NL-map, gebruikt bij het automatisch afleiden. 'paginas': EN-pagina -> NL-pagina. Een koppeling hier wordt alleen gebruikt als het CMS zelf geen NL-link geeft en de NL-pagina in de sitemap staat en nog niet gekoppeld is.",
+  "mappen": {
+    "contact/embassies-consulates-general": "contact/ambassades-consulaten-generaal",
+    "transiting-airport-netherlands": "overstappen-luchthaven-nederland"
+  },
+  "paginas": {
+    "search": "zoeken",
+    "applying-for-asylum/applying-for-asylum": "asiel-aanvragen",
+    "arrested-abroad/a-dutch-relative-or-friend-arrested-abroad": "gearresteerd-buitenland/een-nederlands-familielid-of-vriend-is-gearresteerd",
+    "arrested-abroad/i-am-dutch-and-arrested-abroad": "gearresteerd-buitenland/ik-ben-nederlander-en-gearresteerd",
+    "caribbean-visa/register-caribbean-carpet-programme": "caribisch-visum/aanmelden-caribbean-carpet-programma",
+    "declaration/consular-declaration-where-to-apply": "verklaring/waar-consulaire-verklaring-aanvragen",
+    "declaration/residence/apply-myanmar": "verklaring/woonplaats/verklaring-woonplaats-myanmar",
+    "declaration/residence/statement-residence-estonia": "verklaring/woonplaats/verklaring-woonplaats-estland",
+    "passport-id-card/abroad/apply-honduras": "paspoort-id-kaart/buitenland/paspoort-honduras",
+    "passport-id-card/abroad/apply-papua-new-guinea": "paspoort-id-kaart/buitenland/paspoort-papoea-nieuw-guinea",
+    "passport-id-card/create-account-passport": "paspoort-id-kaart/account-aanmaken-paspoort",
+    "passport-id-card/name-change-uk": "paspoort-id-kaart/naam-wijzigen-verenigd-koninkrijk",
+    "passport-id-card/proxy-consent-minor-uk": "paspoort-id-kaart/vervangende-toestemming-minderjarige-verenigd-koninkrijk",
+    "transiting-airport-netherlands/international-transit-zone-schiphol": "overstappen-luchthaven-nederland/transitzone-schiphol",
+    "transiting-airport-netherlands/luggage": "overstappen-luchthaven-nederland/bagage",
+    "transiting-airport-netherlands/visiting-amsterdam-or-the-netherlands": "overstappen-luchthaven-nederland/amsterdam-of-nederland-bezoeken",
+    "travel-netherlands/how-long-can-i-visit-the-netherlands-for": "reizen-naar-nederland/hoelang-mag-ik-nederland-bezoeken",
+    "visa-the-netherlands/facilitation": "visum-nederland/faciliterend-visum-krijgen",
+    "visa-the-netherlands/visa-required-transit-netherlands": "visum-nederland/visum-nodig-overstap-luchthaven",
+    "contact/embassies-consulates-general/bahamas": "contact/ambassades-consulaten-generaal/bahama-s",
+    "contact/embassies-consulates-general/congo-congo-brazzaville": "contact/ambassades-consulaten-generaal/congo-de-republiek",
+    "contact/embassies-consulates-general/cote-d-ivoire": "contact/ambassades-consulaten-generaal/ivoorkust",
+    "contact/embassies-consulates-general/eswatini": "contact/ambassades-consulaten-generaal/eswatini-swaziland",
+    "contact/embassies-consulates-general/holy-see": "contact/ambassades-consulaten-generaal/heilige-stoel-vaticaanstad",
+    "contact/embassies-consulates-general/hong-kong": "contact/ambassades-consulaten-generaal/hongkong-sar",
+    "contact/embassies-consulates-general/turks-and-caicos-islands": "contact/ambassades-consulaten-generaal/turks-en-caicoseilanden",
+    "contact/embassies-consulates-general/syrian-arab-republic": "contact/ambassades-consulaten-generaal/syrie"
+  }
+}
