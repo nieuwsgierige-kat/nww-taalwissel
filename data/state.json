@@ -449,56 +449,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/bsn/es": {
-"lastmod": "2026-11-06T15:36:46.135Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/bsn/citizen-service-number-bsn.de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/bsn"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/bsn/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/bsn/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/bsn"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/bsn/fr": {
-"lastmod": "2026-11-06T15:37:15.294Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/bsn/citizen-service-number-bsn.de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/bsn"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/bsn/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/bsn/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/bsn"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/bsn/how-to-get": {
 "lastmod": "2026-11-06T13:19:04.134Z",
 "translations": [
@@ -886,48 +836,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/caribisch-visum/checklijst/toerisme"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/caribbean-visa/es": {
-"lastmod": "2026-09-03T12:41:45.988Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/caribisch-visum"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/caribbean-visa/fr": {
-"lastmod": "2026-09-03T10:56:57.336Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/caribisch-visum"
 }
 ]
 },
@@ -3992,48 +3900,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/caribisch-visum/lang-verblijf-verblijfsvergunning/aanvragen-zimbabwe"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/caribbean-visa/long-stay/es": {
-"lastmod": "2026-09-02T08:14:51.703Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/long-stay"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/long-stay/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/long-stay/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/caribisch-visum/lang-verblijf-verblijfsvergunning"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/caribbean-visa/long-stay/fr": {
-"lastmod": "2026-09-02T08:18:05.797Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/long-stay"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/long-stay/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/long-stay/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/caribisch-visum/lang-verblijf-verblijfsvergunning"
 }
 ]
 },
@@ -7123,48 +6989,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/caribisch-visum/kort-verblijf/aanvragen-zimbabwe"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/caribbean-visa/short-stay/es": {
-"lastmod": "2026-09-03T11:25:18.876Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/short-stay"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/short-stay/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/short-stay/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/caribisch-visum/kort-verblijf"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/caribbean-visa/short-stay/fr": {
-"lastmod": "2026-09-03T11:26:39.252Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/short-stay"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/short-stay/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/caribbean-visa/short-stay/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/caribisch-visum/kort-verblijf"
 }
 ]
 },
@@ -18314,31 +18138,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/declaration/de": {
-"lastmod": "2023-03-17T13:39:23.595Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/declaration/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/declaration"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/declaration/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/declaration/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/verklaring"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/declaration/dutch-nationality-certificate": {
 "lastmod": "2024-08-01T06:53:23.680Z",
 "translations": [
@@ -21360,56 +21159,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/verklaring/nederlanderschap-aanvragen/zimbabwe"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/declaration/es": {
-"lastmod": "2023-03-17T13:39:21.026Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/declaration/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/declaration"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/declaration/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/declaration/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/verklaring"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/declaration/fr": {
-"lastmod": "2025-03-24T12:25:17.065Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/declaration/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/declaration"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/declaration/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/declaration/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/verklaring"
 }
 ]
 },
@@ -25273,31 +25022,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/digid-abroad/es": {
-"lastmod": "2026-02-13T09:52:57.296Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad/digid-abroad.de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/digid-buiten-nederland"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/digid-abroad/forgot-username-password": {
 "lastmod": "2026-06-22T10:06:13.035Z",
 "translations": [
@@ -25320,31 +25044,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/digid-buiten-nederland/gebruikersnaam-wachtwoord-vergeten"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/digid-abroad/fr": {
-"lastmod": "2026-02-13T09:53:42.539Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad/digid-abroad.de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/digid-abroad/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/digid-buiten-nederland"
 }
 ]
 },
@@ -26523,81 +26222,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/dutch-nationality/de": {
-"lastmod": "2026-07-03T12:57:55.257Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/nederlandse-nationaliteit"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/dutch-nationality/es": {
-"lastmod": "2026-07-03T12:59:22.984Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/nederlandse-nationaliteit"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/dutch-nationality/fr": {
-"lastmod": "2026-07-03T13:00:01.564Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/dutch-nationality/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/nederlandse-nationaliteit"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/dutch-nationality/how-to-apply-naturalisation-abroad": {
 "lastmod": "2024-07-19T09:14:29.201Z",
 "translations": [
@@ -26865,48 +26489,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/es": {
-"lastmod": "2023-07-27T14:37:25.228Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/nederlands-diploma-buitenland"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/fr": {
-"lastmod": "2023-07-27T14:38:17.758Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/nederlands-diploma-buitenland"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/dutch-qualifications-abroad/lost-damaged": {
 "lastmod": "2022-05-09T11:12:38.646Z",
 "translations": [
@@ -27068,81 +26650,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/de": {
-"lastmod": "2024-08-01T12:06:29.691Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/landen-eu-eva-eer-schengen"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/es": {
-"lastmod": "2026-08-14T13:58:59.812Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/landen-eu-eva-eer-schengen"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/fr": {
-"lastmod": "2024-08-01T12:11:28.733Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/eu-eea-efta-schengen-countries/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/landen-eu-eva-eer-schengen"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/forced-marriage-abandoned-abroad": {
 "lastmod": "2026-07-16T12:26:06.946Z",
 "translations": [
@@ -27195,27 +26702,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/buitenlands-diploma-in-nederland/nederlandse-titel-aanvragen"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands/es": {
-"lastmod": "2022-08-23T10:21:08.977Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/buitenlands-diploma-in-nederland"
 }
 ]
 },
@@ -27279,27 +26765,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/buitenlands-diploma-in-nederland/diplomawaardering-werk"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands/fr": {
-"lastmod": "2022-08-04T08:11:09.402Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/foreign-qualifications-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/buitenlands-diploma-in-nederland"
 }
 ]
 },
@@ -28186,27 +27651,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/legaliseren/nederlandse-documenten/rechtstreeks"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/legalisation/es": {
-"lastmod": "2026-05-19T13:43:11.834Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/legalisation"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/legalisation/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/legalisation/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/legaliseren"
 }
 ]
 },
@@ -31309,27 +30753,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/legaliseren/buitenlandse-documenten/zimbabwe"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/legalisation/fr": {
-"lastmod": "2026-05-07T16:11:30.169Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/legalisation"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/legalisation/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/legalisation/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/legaliseren"
 }
 ]
 },
@@ -35653,48 +35076,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/non-residents-records-database/es": {
-"lastmod": "2026-11-09T08:32:45.873Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/non-residents-records-database"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/non-residents-records-database/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/non-residents-records-database/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/rni"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/non-residents-records-database/fr": {
-"lastmod": "2026-11-06T11:14:45.241Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/non-residents-records-database"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/non-residents-records-database/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/non-residents-records-database/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/rni"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/non-residents-records-database/register": {
 "lastmod": "2026-11-06T10:35:07.496Z",
 "translations": [
@@ -39054,31 +38435,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/passport-id-card/de": {
-"lastmod": "2026-07-17T06:23:45.903Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/paspoort-id-kaart"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/passport-id-card/difference": {
 "lastmod": "2026-02-02T15:49:40.638Z",
 "translations": [
@@ -42157,31 +41513,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/passport-id-card/es": {
-"lastmod": "2026-07-17T06:24:49.690Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/paspoort-id-kaart"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/passport-id-card/expired": {
 "lastmod": "2025-11-26T10:49:42.632Z",
 "translations": [
@@ -42229,31 +41560,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/paspoort-id-kaart/veelgestelde-vragen-verwerkingstijd"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/passport-id-card/fr": {
-"lastmod": "2026-07-17T06:25:41.626Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/passport-id-card/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/paspoort-id-kaart"
 }
 ]
 },
@@ -46820,48 +46126,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/study-apprenticeship-home-country/es": {
-"lastmod": "2024-09-24T06:43:01.950Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/study-apprenticeship-home-country"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/study-apprenticeship-home-country/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/study-apprenticeship-home-country/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/studeren-stage-nederland"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/study-apprenticeship-home-country/fr": {
-"lastmod": "2024-09-24T06:45:59.772Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/study-apprenticeship-home-country"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/study-apprenticeship-home-country/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/study-apprenticeship-home-country/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/studeren-stage-nederland"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/submit-complaint": {
 "lastmod": "2026-10-23T08:09:40.091Z",
 "translations": [
@@ -47642,27 +46906,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/travel-netherlands/es": {
-"lastmod": "2026-08-24T08:51:03.075Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/travel-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/travel-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/travel-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/travel-netherlands/etias-needed": {
 "lastmod": "2026-10-12T13:42:35.556Z",
 "translations": [
@@ -47685,27 +46928,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland/etias-nodig"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/travel-netherlands/fr": {
-"lastmod": "2026-08-24T08:41:45.973Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/travel-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/travel-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/travel-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/reizen-naar-nederland"
 }
 ]
 },
@@ -51326,48 +50548,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/es": {
-"lastmod": "2025-04-02T09:49:44.073Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-luchthaventransitvisum"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/fr": {
-"lastmod": "2025-04-02T09:49:44.474Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-luchthaventransitvisum"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-airport-transit-visa/ghana": {
 "lastmod": "2026-03-10T12:25:32.020Z",
 "translations": [
@@ -51471,48 +50651,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa/es": {
-"lastmod": "2025-04-01T13:09:07.007Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-inreisvisum"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa/fr": {
-"lastmod": "2025-04-01T10:08:43.059Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-entry-visa/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-inreisvisum"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-returning-migrants": {
 "lastmod": "2025-10-29T13:55:32.227Z",
 "translations": [
@@ -51587,48 +50725,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-zakenreis-officieel-bezoek/cuba"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit/es": {
-"lastmod": "2025-04-02T09:49:29.810Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-zakenreis-officieel-bezoek"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit/fr": {
-"lastmod": "2025-04-02T09:49:30.280Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-business-official-visit/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-zakenreis-officieel-bezoek"
 }
 ]
 },
@@ -51774,48 +50870,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez/es": {
-"lastmod": "2025-04-02T09:50:10.552Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-chavez-vilchez"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez/fr": {
-"lastmod": "2025-04-02T09:50:10.109Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-chavez-vilchez/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-chavez-vilchez"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends": {
 "lastmod": "2026-09-15T09:14:05.923Z",
 "translations": [
@@ -51877,48 +50931,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-familie-vriendenbezoek/cuba"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends/es": {
-"lastmod": "2026-09-15T09:14:44.799Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-familie-vriendenbezoek"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends/fr": {
-"lastmod": "2026-09-15T09:14:23.084Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-friends/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-familie-vriendenbezoek"
 }
 ]
 },
@@ -52064,48 +51076,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea/es": {
-"lastmod": "2025-04-02T09:50:03.901Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-familielid-eu-eer"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea/fr": {
-"lastmod": "2025-04-02T09:50:04.351Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-familielid-eu-eer"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-nl/united-kingdom": {
 "lastmod": "2025-11-14T08:13:51.194Z",
 "translations": [
@@ -52150,48 +51120,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-medisch/bangladesh"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical/es": {
-"lastmod": "2025-04-01T13:23:48.539Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-medisch"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical/fr": {
-"lastmod": "2025-04-01T10:25:18.350Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-medical/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-medisch"
 }
 ]
 },
@@ -52321,48 +51249,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-zeevarenden/bangladesh"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer/es": {
-"lastmod": "2025-04-02T09:49:57.571Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-zeevarenden"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer/fr": {
-"lastmod": "2025-04-02T09:49:57.946Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-seafarer/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-zeevarenden"
 }
 ]
 },
@@ -52496,48 +51382,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-studie-evenement/cuba"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event/es": {
-"lastmod": "2025-04-02T09:49:51.007Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-studie-evenement"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event/fr": {
-"lastmod": "2025-04-02T09:49:51.399Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-study-event/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-studie-evenement"
 }
 ]
 },
@@ -52726,48 +51570,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/es": {
-"lastmod": "2025-04-02T09:49:37.324Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-toerisme"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/fr": {
-"lastmod": "2025-04-02T09:49:36.919Z",
-"translations": [
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland/checklijst-schengenvisum-toerisme"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-tourism/ghana": {
 "lastmod": "2026-03-10T12:33:16.183Z",
 "translations": [
@@ -52911,31 +51713,6 @@
 {
 "lang": "nl",
 "link": "https://www.nederlandwereldwijd.nl/visum-nederland/account-aanmaken-visumaanvraagformulier-voor-nederland"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/de": {
-"lastmod": "2026-11-05T13:23:16.914Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland"
 }
 ]
 },
@@ -56094,31 +54871,6 @@
 }
 ]
 },
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/es": {
-"lastmod": "2026-11-05T13:20:52.365Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland"
-}
-]
-},
 "https://www.netherlandsworldwide.nl/visa-the-netherlands/expiring-residence-permit-what-arrangements-to-make": {
 "lastmod": "2026-10-12T14:16:23.261Z",
 "translations": [
@@ -56162,31 +54914,6 @@
 {
 "lang": "fr",
 "link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/facilitation.fr"
-}
-]
-},
-"https://www.netherlandsworldwide.nl/visa-the-netherlands/fr": {
-"lastmod": "2026-11-05T13:18:39.261Z",
-"translations": [
-{
-"lang": "de",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/de"
-},
-{
-"lang": "en",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands"
-},
-{
-"lang": "es",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/es"
-},
-{
-"lang": "fr",
-"link": "https://www.netherlandsworldwide.nl/visa-the-netherlands/fr"
-},
-{
-"lang": "nl",
-"link": "https://www.nederlandwereldwijd.nl/visum-nederland"
 }
 ]
 },
