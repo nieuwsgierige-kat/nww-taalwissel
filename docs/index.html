@@ -19,7 +19,7 @@
   const msg = document.getElementById('msg');
   const meta = document.getElementById('meta');
   const u = new URLSearchParams(location.search).get('u');
-  const lang = new URLSearchParams(location.search).get('lang') || 'en';
+  const langParam = new URLSearchParams(location.search).get('lang');
 
   // Zelfde normalisatie als norm() in build_map.py
   const norm = (s) => {
@@ -28,7 +28,7 @@
   };
 
   if (!u) {
-    msg.innerHTML = 'Gebruik de bookmarklet op een pagina van nederlandwereldwijd.nl.';
+    msg.innerHTML = 'Gebruik de bookmarklet op een pagina van nederlandwereldwijd.nl of netherlandsworldwide.nl.';
     const dl = document.createElement('p');
     dl.append(Object.assign(document.createElement('a'), { href: 'koppellijst.xlsx', textContent: 'Download de koppellijst (.xlsx)' }));
     document.body.append(dl);
@@ -51,17 +51,26 @@
     return;
   }
 
-  const hit = map[key];
-  if (hit && hit[lang]) {
-    location.replace(hit[lang] + location.hash);
+  // Nederlandse pagina: opzoeken op sleutel. Andere taal (EN/ES/FR/DE): omgekeerd zoeken in de waarden.
+  const fromNl = key.startsWith('nederlandwereldwijd.nl/');
+  let nlKey = fromNl ? key : null;
+  if (!fromNl) {
+    for (const [k, langs] of Object.entries(map)) {
+      if (Object.values(langs).some(v => { try { return norm(v) === key; } catch { return false; } })) { nlKey = k; break; }
+    }
+  }
+  // Standaard: vanaf NL naar EN, vanaf elke andere taal naar NL. &lang= gaat voor.
+  const lang = (langParam || (fromNl ? 'en' : 'nl')).toLowerCase();
+  const hit = nlKey ? Object.assign({ nl: 'https://www.' + nlKey }, map[nlKey]) : null;
+  if (hit && hit[lang] && norm(hit[lang]) !== key) {
+    location.replace(hit[lang] + location.hash);   // #… doorgeven (de taalversie-checker stuurt zo zijn gegevens mee)
     return;
   }
   msg.innerHTML = '';
-  msg.append('Geen ' + lang.toUpperCase() + '-versie gevonden voor ', Object.assign(document.createElement('code'), { textContent: u }), '.');
-  if (hit) {
-    const other = Object.keys(hit).join(', ');
-    msg.append(' Wel beschikbaar: ' + other + '.');
-  }
+  if (hit && hit[lang] && norm(hit[lang]) === key) msg.append('Dit is al de ' + lang.toUpperCase() + '-versie: ', Object.assign(document.createElement('code'), { textContent: u }), '.');
+  else msg.append('Geen ' + lang.toUpperCase() + '-versie gevonden voor ', Object.assign(document.createElement('code'), { textContent: u }), '.');
+  const other = hit ? Object.keys(hit).filter(l => norm(hit[l]) !== key).join(', ') : '';
+  if (other) msg.append(' Wel beschikbaar: ' + other + '.');
   const back = Object.assign(document.createElement('p'), {});
   back.append(Object.assign(document.createElement('a'), { href: u, textContent: '← Terug naar de pagina' }));
   document.body.append(back);
