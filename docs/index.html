@@ -53,7 +53,7 @@
 
   const hit = map[key];
   if (hit && hit[lang]) {
-    location.replace(hit[lang]);
+    location.replace(hit[lang] + location.hash);
     return;
   }
   msg.innerHTML = '';
