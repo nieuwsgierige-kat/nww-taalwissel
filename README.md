@@ -1,6 +1,6 @@
 # NWW taalwissel
 
-Bookmarklet voor redacteuren: één klik op een pagina van nederlandwereldwijd.nl opent de Engelse versie op netherlandsworldwide.nl.
+Bookmarklet voor redacteuren: één klik op een pagina van nederlandwereldwijd.nl opent de Engelse versie op netherlandsworldwide.nl. Op een Engelse (of Spaanse, Franse, Duitse) pagina opent dezelfde bladwijzer de Nederlandse versie.
 
 ## Hoe het werkt
 
@@ -35,7 +35,7 @@ Engels, nieuw tabblad:
 javascript:(()=>{window.open('https://nieuwsgierige-kat.github.io/nww-taalwissel/?u='+encodeURIComponent(location.href))})()
 ```
 
-Spaans, Frans of Duits (zelfde tabblad; vervang `es` door `fr` of `de`):
+Spaans, Frans of Duits (zelfde tabblad; vervang `es` door `fr`, `de`, `en` of `nl`). Zonder `&lang=` gaat de bladwijzer van Nederlands naar Engels en van elke andere taal naar Nederlands:
 
 ```
 javascript:(()=>{location.href='https://nieuwsgierige-kat.github.io/nww-taalwissel/?u='+encodeURIComponent(location.href)+'&lang=es'})()
